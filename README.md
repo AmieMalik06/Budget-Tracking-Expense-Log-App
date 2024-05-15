@@ -69,7 +69,77 @@ You've successfully run and modified your React Native App. :partying_face:
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
+EXPENSES LOG: 
+This React Native code creates an expense tracker app where users can add, edit, and delete 
+expenses. It’s the main part that controls everything. It helps us keep track of our spending in a 
+really easy way. 
+Description of the EXPENSES LOG: 
+ 
+ 
+Components: 
+1- ThemeToggle 
+2- ExpenseInput 
+ThemeToggle: 
+The ThemeToggle component is responsible for rendering a toggle switch that allows users to 
+switch between dark and light themes in the application. 
+ 
+ExpenseInput: 
+The ExpenseInput component is designed to render input fields for entering expense details, such 
+as the Title and Cost. 
+ 
+Imports: 
+ 
+DateTimePickerModal is a component for picking dates and times in a modal. 
+PencilSimple and TrashSimple are icons imported from the phosphor-react-native library. 
+These are custom icons for the edit and delete buttons. 
+State Management: 
+ 
+isEnabled: Manages the state of the theme toggle switch (whether it's enabled or disabled). 
+systemTheme: Retrieves the system's color scheme (light or dark) using the useColorScheme 
+hook. 
+theme: Manages the current theme of the application. 
+date: Tracks the selected date for expense entries. 
+expName and expCost: Store the name and cost of the expense currently being input. 
+data: Maintains a list of expense items. 
+totalExpenditure: Tracks the total amount spent on expenses. 
+openDatePicker: Manages the visibility state of the date picker modal. 
+mainButton: Manages the label text of the main action button (either "ADD EXPENSE" or 
+"UPDATE"). 
+editingItemId: Tracks the ID of the expense item being edited (or null if not editing). 
+styles: Retrieves the styles for the component based on the current theme. 
+Date And Time Picker: 
+ 
+ 
+The DateTimePickerModal component is used to display a modal for selecting dates. It allows 
+users to confirm or cancel their date selections, with corresponding actions updating the 
+application state accordingly. 
+ 
+ 
+ 
+Functionalities: 
+1. AddAndUpdate Items: 
 
+2. Edit Items: 
+
+3. Delete Items: 
+
+Toggle Switch: 
+ 
+This toggleSwitch function serves to toggle between dark and light themes in the application. 
+ 
+
+  
+FlatList: 
+ 
+ 
+This code snippet creates a list of expenses, displaying each expense's ID, title, cost, and 
+associated buttons for editing and deleting. It also handles interactions like editing and deleting 
+expenses seamlessly. Additionally, it provides feedback when the list is empty. 
+useEffect: 
+
+This useEffect function ensures that the total expenditure is dynamically recalculated whenever 
+there's a change in the expense data (data array), providing an accurate representation of the total 
+expenses incurred by the user. 
 To learn more about React Native, take a look at the following resources:
 
 - [React Native Website](https://reactnative.dev) - learn more about React Native.
